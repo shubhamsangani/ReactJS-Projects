@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.flex img {
+  max-width: 300px;
+}
+
+.overflow {
+  overflow: hidden auto;
+  padding-top: 4.5rem;
+}
+
+.content {
+  flex-basis: 100%;
+}
+
+.content img {
+  flex-basis: 45%;
+  object-fit: contain;
+  border-radius: 5px;
+  user-select: none;
+  width: 100%;
+}
+
+.content h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+.content p {
+  color: var(--text-gray);
+  opacity: 0.8;
+}
+
+.content p + p {
+  margin-top: 1.5em;
+}
+
+.content p > span {
+  color: var(--white);
+  margin-right: 0.5em;
+}
+
+.rowWrap > div {
+  overflow: auto;
+  flex-wrap: wrap;
+  flex-wrap: 1rem;
+}

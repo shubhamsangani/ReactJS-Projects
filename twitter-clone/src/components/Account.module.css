@@ -1,0 +1,75 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 0.5rem;
+  padding-right: 1rem;
+  border-radius: 100vw;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+  margin-block: 0.5rem;
+}
+
+.rel {
+  position: relative;
+}
+
+.more {
+  position: absolute;
+  inset: 0 -10% auto -10%;
+  transform: translateY(-100%);
+  background-color: rgb(var(--bg-dark));
+  box-shadow: rgb(var(--fg-dark-1), 0.6) 0px 0px 15px,
+    rgba(var(--fg-dark-1), 0.6) 0px 0px 3px 1px;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 3;
+  animation: in 150ms ease-in-out;
+}
+
+.more .wrapper {
+  padding-inline: 1rem;
+}
+
+.logout {
+  border-top: 1px solid rgb(var(--fg-dark-1), 0.7);
+  list-style-type: none;
+  padding: 0 0 0.5em;
+}
+
+.logout li {
+  padding: 1.25em;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: rgb(var(--fg-dark-2));
+  transition: background-color 200ms ease-in-out;
+}
+
+.logout li:hover,
+.hov:hover {
+  background-color: rgb(var(--bg-dark-2));
+}
+
+.username {
+  padding-inline: 1em;
+  flex: 1;
+  line-height: 1.4;
+  font-size: 0.85em;
+}
+
+.uname {
+  color: rgb(var(--fg-dark-1));
+  font-size: 0.75rem;
+}
+
+.icon {
+  font-size: 1.1em;
+}
+
+@keyframes in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

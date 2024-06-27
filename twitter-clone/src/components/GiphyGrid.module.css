@@ -1,0 +1,35 @@
+.giphyBox {
+  position: fixed;
+  inset: 2rem 0 auto 0;
+  margin: auto;
+  padding: 0.5em;
+  max-width: 650px;
+  cursor: auto !important;
+  border-radius: 1rem;
+  background-color: rgb(var(--bg-dark));
+  z-index: 3;
+  overflow: hidden auto;
+  max-height: 70vh;
+}
+
+.searchInput {
+  padding: 0.25rem 2rem 1rem 4rem;
+}
+
+.gifsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden auto;
+  gap: 2px;
+}
+
+.gif {
+  object-fit: cover;
+  width: calc(25% - 2px);
+  cursor: pointer;
+}
+
+.gif:hover {
+  position: relative;
+  z-index: 4;
+}

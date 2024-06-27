@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
+
+@font-face {
+  font-family: "Nexa";
+  src: url("./assets/fonts/Nexa_Light.otf"), url("./assets/fonts/Nexa_Bold.otf");
+}
+
+:root {
+  --main-color: #6560f7;
+  --white: #f8f8ff;
+  --black: #090705;
+  --bg-color: #2d3244;
+  --bg-secondary: #232735;
+  --text-gray: #a8b0be;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Nexa, sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+*::selection {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--white);
+}
+
+.textDark {
+  color: var(--black);
+}
+
+.light {
+  font-weight: 200;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.moviesRow {
+  display: flex;
+  overflow: scroll hidden;
+  padding-block: 1rem;
+}
+
+.row {
+  padding-inline: 1rem;
+}
+
+.container .row h2 {
+  padding-left: 1rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.moviesRow::-webkit-scrollbar {
+  display: none;
+}
+
+.moviesRow > .poster {
+  transition: transform 175ms ease-in;
+  cursor: pointer;
+  height: 200px;
+  object-fit: contain;
+  position: relative;
+  margin-left: 0.75em;
+}
+
+.showall {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.showall:hover {
+  text-decoration: underline;
+}
+
+.info {
+  position: absolute;
+  inset: 0;
+  background-color: #090705d7;
+  opacity: 0;
+  padding: 0.5em;
+  transition: opacity 225ms ease-in;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #f8f8ff;
+  border-radius: 5px;
+}
+
+.moviesRow .poster:hover {
+  transform: scale(1.075);
+}
+
+.moviesRow .poster:hover .info {
+  opacity: 1;
+}
+
+.moviesRow img {
+  border-radius: 5px;
+  height: 100%;
+}
+
+.moviesRowTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rowWrap {
+  overflow: hidden auto;
+  flex-wrap: wrap;
+  gap: 1rem 0;
+}

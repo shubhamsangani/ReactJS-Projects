@@ -1,0 +1,51 @@
+.navLink > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: light;
+  padding: 0.75em 1em;
+  border-radius: 100vw;
+  color: rgb(var(--fg-dark));
+  width: fit-content;
+  transition: background-color 200ms ease-in-out;
+  line-height: 1.25em;
+}
+
+.navLink + .navLink {
+  margin-top: 0.25em;
+}
+
+.navLink > a:hover {
+  background-color: rgb(var(--bg-dark-2));
+}
+
+.logo p {
+  display: none;
+}
+
+.logo > a {
+  font-size: 1.75rem !important;
+  padding: 0.75rem !important;
+  margin-left: 0.25rem;
+}
+
+.navLink > a p {
+  margin-left: 1em;
+}
+
+.isActive > p {
+  font-weight: bold;
+}
+
+.filled {
+  display: none;
+}
+
+.isActive .outline {
+  display: none !important;
+}
+
+.isActive .filled {
+  display: block !important;
+}

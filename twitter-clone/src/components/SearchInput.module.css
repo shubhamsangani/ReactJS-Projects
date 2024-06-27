@@ -1,0 +1,27 @@
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 100vw;
+  color: rgb(var(--fg-dark-2));
+  border: 1px solid rgb(var(--bg-dark-2));
+}
+
+.search .icon {
+  margin-right: 0.5em;
+}
+
+.search:focus-within .icon {
+  color: rgb(var(--accent-color));
+}
+
+.search > input {
+  background-color: transparent;
+  color: rgb(var(--fg-dark));
+  font-size: 0.8rem;
+  border: none;
+  outline: none;
+}
+
+.search:focus-within {
+  border: 1px solid rgb(var(--accent-color));
+}

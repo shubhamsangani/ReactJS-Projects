@@ -1,0 +1,13 @@
+.feed {
+  flex: 0.5;
+  border-right: 1px solid rgb(var(--bg-dark-2));
+  border-left: 1px solid rgb(var(--bg-dark-2));
+  overflow: hidden auto;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
